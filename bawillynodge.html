@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ba Willynodge</title>
+	<style>
+
+		body {
+			background: linear-gradient(135deg, crimson, black);
+		}
+
+		.navbar {
+			background-color: black;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+
+		.navbar-brand {
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: 10px;
+		}
+
+		.navbar-menu {
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar-menu li {
+			margin: 0 10px;
+		}
+
+		.navbar-menu a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+		}
+
+		.navbar-menu a:hover {
+			text-decoration: underline;
+		}
+
+		.navbar-signup {
+			margin-right: 10px;
+		}
+
+		.navbar-signup a {
+			background-color: #fff;
+			color: #333;
+			padding: 8px 16px;
+			border-radius: 4px;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: -250px;
+			width: 250px;
+			height: 100%;
+			background-color: black;
+			color: #fff;
+			transition: left 0.3s;
+		}
+
+		.sidebar-open {
+			left: 0;
+		}
+
+		.sidebar-brand {
+			font-weight: bold;
+			font-size: 20px;
+			padding: 10px;
+		}
+
+		.sidebar-menu {
+			list-style-type: none;
+			padding: 0;
+			margin: 20px 0;
+		}
+
+		.sidebar-menu li {
+			margin-bottom: 10px;
+		}
+
+		.sidebar-menu a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 5px;
+			display: block;
+		}
+
+		.hamburger {
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		.hamburger span {
+			width: 100%;
+			height: 2px;
+			margin-bottom: 4px;
+			background-color: #fff;
+		}
+
+		@media (max-width: 10000px) {
+			.navbar-menu {
+				display: none:
+			}
+	
+			.navbar-signup {
+				display: none;
+			}
+
+			.hamburger {
+				display: flex;
+			}
+		}
+
+	</style>
+
+	<script>
+
+		function toggleSidebar() {
+			var sidebar = document.getElementById('sidebar');
+			sidebar.classList.toggle('sidebar-open');
+		}
+
+	</script>
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="navbar-brand">Shapestone Enterprise</div>
+		<ul class="navbar-menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="wlodge_services.html">Services</a></li>
+			<li><a href="inbox.html">Contact</a></li>
+		</ul>
+		<div class="hamburger" onclick="toggleSidebar()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-brand">Shapestone Enterprise</div>
+		<ul class="sidebar-menu">
+			<li><a href="login.html">Login</a></li>
+			<li><a href="registers.html">Sign Up</a></li>
+		</ul>
+		<div class="sidebar-brand">Quick Links</div>
+		<ul>
+			<li><a href="wlodge_services.html">Services</a></li>
+			<li><a href="inbox.html">Contact</a></li>
+			<li><a href="#">FAQ</a></li>
+		</ul>
+		<div class="sidebar-brand">Services Review</div>
+		<ul>
+			<li>Real Estate Agency</li>
+		</ul>
+			<img src="estate/house6.jpg" alt="real estate" height="auto" width="85%">
+		<p><a href="#" style="color: crimson;">View more</a></p>
+	</div>
+
+
+	<style>
+		#container {
+			width: 250px;
+			height: 250px;
+			display: grid;
+			background-color: blue;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		.img-container {
+			position: absolute;
+			top: 79px;
+			right: 20px;
+			width: 300px;
+			height: 300px;
+			object-fit: cover;
+		}
+			
+
+		p {
+			font-size: 15px;
+			color: white;
+		}
+
+		h1 {
+			font-size: 20px;
+			color: red;
+		}
+
+		.img {
+			width: 400px;
+			height: auto;
+		}
+
+		.footer {
+			background-color: black;
+			width: 100%;
+			height: 82vh;
+			margin-top: 20px;
+			color: #fff;	
+		}
+
+		.footer_p {
+			font-size: 36px;
+		}
+
+		.dial {
+			color: red;
+		}
+
+		@media (max-width: 1000px) {
+			body {
+				background-color: crimson;
+			}
+
+			#container {
+				width: 200px;
+				height: 200px;
+				display: inline-block;
+				background-color: blue;
+				padding: 10px;
+				margin-top: 10px;
+			}
+
+			.img-container {
+				display: none;
+			}
+
+		}	
+			
+	</style>
+
+<center>
+	<div id="container">
+		<h1></h1>
+		<p>Shapestone Enterprise is a legit and licensed private company that offers a wide range of services (please refer to the above links to access more information regarding these). Our main headquarters offices are in Harare, Aspindale and the sub-branches decentralized nationwide in all the major cities of Zimbabwe.</p>
+	</div>
+
+	<div id="container">
+		<p>Security is at the core of our heart. It is this commitment to offer the utmost ineffable services to our respected clients that has made us into the pool of the top ranked companies in Zimbabwe. Shapestone Enterprise stands firm in the top 5%.</p>
+	</div>
+</center>
+	<div class="img-container">
+		<div class="img"><img src="icons/logo_shape.jpg" height="75%" width="75%" alt="Shapestone"></div>
+	</div>
+
+
+	<div class="footer">
+	<center>
+		<div class="footer_p">SHAPESTONE ENTERPRISE</p>
+		</div>
+	</center>
+
+	<p>
+		<div class="footer_p" style="font-size: 22px;">ADDRESS:</div>
+		<div>45 Aspindale Park</div>
+		<div>Marimba</div>
+		<div>Harare</div>
+		<div>Zimbabwe</div>
+	</p>
+	<p>
+		<div class="footer_p" style="font-size: 22px;">CALL/SMS:</p>
+		</div>
+
+			<div class="dial">
+				<div>0735 671 990</div>
+				<div>0714 237 566</div>
+				<div>0783 435 153</div>
+				<div>0777 121 030</div>
+			</div>
+	</p>
+	<p>
+		<div class="footer_p" style="font-size: 22px;">MAIL:</p>
+		</div>
+		<div>shapestoneenterprise@yahoo.com</div>
+	</p>
+
+
+<center>
+	<div>This site was created by Coresoft Pvt Ltd. Whatsapp 0714 581 271.</div>
+	<div><a href="coresoft.com">CORESOFT PVT LTD</a></div>
+	<div>All Rights Reserved</div>
+	<div>Terms and Conditions Apply</div>
+<table>
+	<tr>
+		<td><a href="#"><img src="icons/whatsapp1.jpg" alt="whatsapp" title="Whatsapp"></a></td>
+		<td><a href="#"><img src="icons/facebook.jpg" alt="facebook" title="Facebook"></a></td>
+		<td><a href="https://www.instagram.com/mandipandira?utm_source=qr&r=nametag"><img src="icons/instagram1.jpg" alt="instagram" title="Instagram"></td>
+		<td><a href="#"><img src="icons/youtube2.jpg" alt="youtube" title="YouTube"></td>
+	</tr>
+</table>
+</center>
+Copyright &copy; 2023
+
+
+
+
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Services Shapestone</title>
+	<style>
+		body {
+			background: linear-gradient(135deg, blue, #E91E63);
+		}
+
+		.navbar {
+			background: linear-gradient(135deg, black, #333);
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+
+		.navbar-brand {
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: 10px;
+		}
+
+		.navbar-menu {
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar-menu li {
+			margin: 0 10px;
+		}
+
+		.navbar-menu a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+		}
+
+		.navbar-menu a:hover {
+			text-decoration: underline;
+		}
+
+		.navbar-signup {
+			margin-right: 10px;
+		}
+
+		.navbar-signup a {
+			background-color: #fff;
+			color: #333;
+			padding: 8px 16px;
+			border-radius: 4px;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: -250px;
+			width: 250px;
+			height: 100%;
+			background-color: black;
+			color: #fff;
+			transition: left 0.3s;
+		}
+
+		.sidebar-open {
+			left: 0;
+		}
+
+		.sidebar-brand {
+			font-weight: bold;
+			font-size: 20px;
+			padding: 10px;
+		}
+
+		.sidebar-menu {
+			list-style-type: none;
+			padding: 0;
+			margin: 20px 0;
+		}
+
+		.sidebar-menu li {
+			margin-bottom: 10px;
+		}
+
+		.sidebar-menu a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			padding: 5px;
+			display: block;
+		}
+
+		.hamburger {
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		.hamburger span {
+			width: 100%;
+			height: 2px;
+			margin-bottom: 4px;
+			background-color: #fff;
+		}
+
+		@media (max-width: 10000px) {
+			.navbar-menu {
+				display: none:
+			}
+	
+			.navbar-signup {
+				display: none;
+			}
+
+			.hamburger {
+				display: flex;
+			}
+		}
+
+	</style>
+
+	<script>
+
+		function toggleSidebar() {
+			var sidebar = document.getElementById('sidebar');
+			sidebar.classList.toggle('sidebar-open');
+		}
+
+	</script>
+</head>
+<body>
+
+	<nav class="navbar">
+		<div class="navbar-brand">Shapestone Enterprise</div>
+		<ul class="navbar-menu">
+			<li><a href="bawillynodge.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="inbox.html">Contact</a></li>
+		</ul>
+		<div class="hamburger" onclick="toggleSidebar()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-brand">Shapestone Enterprise</div>
+		<ul class="sidebar-menu">
+			<li><a href="login.html">Login</a></li>
+			<li><a href="registers.html">Sign Up</a></li>
+		</ul>
+		<div class="sidebar-brand">Quick Links</div>
+		<ul>
+			<li><a href="#">Services</a></li>
+			<li><a href="inbox.html">Contact</a></li>
+			<li><a href="#">FAQ</a></li>
+		</ul>
+		<div class="sidebar-brand">Services Review</div>
+		<ul>
+			<li>Real Estate Agency</li>
+		</ul>
+			<img src="estate/house6.jpg" alt="real estate" height="auto" width="85%">
+		<p><a href="#" style="color: crimson;">View more</a></p>
+	</div>
+
+
+
+
+	<style>
+		.main_container {
+			width: 100%;
+			height: 33vh;
+			background: linear-gradient(135deg, #191970, #008080);
+			color: #fff;
+		}
+
+		.main_container:hover {
+			background: linear-gradient(135deg, #008080, #191970);
+		}
+
+		.container_x {
+			margin-left: 250px;
+			width: 50%;
+			height: 32vh;
+			background: linear-gradient(135deg, #333, red);
+		}
+
+		.cube {
+			width: 200px;
+			height: 200px;
+			position: relative;
+			transform-style: preserve-3D;
+			animation: rotateCube 6s infinite linear;
+		}
+
+		.face {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			border: 1px solid #ccc;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 18px;
+			background: linear-gradient(135deg, black, crimson);
+			color: #eee;
+		}
+
+		.front { transform: translateZ(100px); }
+		.back { transform: translateZ(-100px) rotateY(180deg); }
+		.right { transform: rotateY(-90deg) translateZ(100px); }
+		.left { transform: rotateY(90deg) translateZ(100px); }
+		.top { transform: rotateX(90deg) translateZ(100px); }
+		.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+		@keyframes rotateCube {
+			0% { transform: rotateY(0deg); }
+			100% { transform: rotateY(360deg); }
+		}
+
+		@media (max-width: 800px) {
+			.main_container {
+				height: 45vh;
+			}
+
+			.container_x {
+				height: 44vh;
+			}
+
+			
+	</style>
+
+
+
+<center>
+	<div class="cube">
+		<div class="face front">
+			<p>Security Services<p>
+		</div>
+
+		<div class="face back">
+			<p>Private Investigations</p>
+		</div>
+
+		<div class="face right">
+			<p>Real Estate Agency<p>
+		</div>
+
+		<div class="face left">
+			<p>Surveillance and Monitoring</p>
+		</div>
+
+		<div class="face top"></div>
+		<div class="face bottom"></div>
+	</div>
+</center>
+
+
+
+
+	<div class="main_container">
+		<div class="container_x">
+			<h1>Security Services</h1>
+				<ul>
+					<li>Alarm responce</li>
+					<li>Alarm system</li>
+					<li>Home security</li>
+						<ul>
+							<li>Guarding</li>
+							<li>CCTV surveillance</li>
+						</ul>
+					<li>Armed reaction</li>
+				</ul>
+		</div>
+	</div>
+
+
+
+	<div class="main_container">
+		<div class="container_x">
+			<h1>Private Investigations</h1>
+				<ul>
+					<li>Surveillance</li>
+					<li>monitoring</li>
+					<li>Report & arrest</li>
+					<li>Court apperance</li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="main_container">
+		<div class="container_x">
+			<h1>Business Consultancy</h1>
+				<ul>
+					<li>Tax consultancy</li>
+					<li>Secretarial services</li>
+					<li>Business proposals</li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="main_container">
+		<div class="container_x">
+			<h1>Real Estate Agency</h1>
+				<ul>
+					<li>Property sales</li>
+						<ul>
+							<li>Buy or sell:</li>
+								<ul>
+									<li>Houses</li>
+									<li>Stands</li>
+									<li>Cars</li>
+								</ul>
+							<li>Lease/rent:</li>
+								<ul>
+									<li>Fixed assets, automobiles, etc</li>
+								</ul>
+						</ul>
+					<li>Registration and documentation</li>
+				<ul>
+		</div>
+	</div>
+
+
+
+	<style>
+		.footer {
+			background: linear-gradient(135deg, #333, black);
+			width: 100%;
+			height: 82vh;
+			margin-top: 20px;
+			color: #fff;	
+		}
+
+		.footer_p {
+			font-size: 36px;
+		}
+
+		.dial {
+			color: red;
+		}
+	</style>
+
+
+	<div class="footer">
+	<center>
+		<div class="footer_p">SHAPESTONE ENTERPRISE</p>
+		</div>
+	</center>
+
+	<p>
+		<div class="footer_p" style="font-size: 22px;">ADDRESS:</div>
+		<div>45 Aspindale Park</div>
+		<div>Marimba</div>
+		<div>Harare</div>
+		<div>Zimbabwe</div>
+	</p>
+	<p>
+		<div class="footer_p" style="font-size: 22px;">CALL/SMS:</p>
+		</div>
+
+			<div class="dial">
+				<div>0735 671 990</div>
+				<div>0714 237 566</div>
+				<div>0783 435 153</div>
+				<div>0777 121 030</div>
+			</div>
+	</p>
+	<p>
+		<div class="footer_p" style="font-size: 22px;">MAIL:</p>
+		</div>
+		<div>shapestoneenterprise@yahoo.com</div>
+	</p>
+
+
+<center>
+	<div>This site was created by Coresoft Pvt Ltd. Whatsapp 0714 581 271.</div>
+	<div><a href="coresoft.com">CORESOFT PVT LTD</a></div>
+	<div>All Rights Reserved</div>
+	<div>Terms and Conditions Apply</div>
+<table>
+	<tr>
+		<td><a href="#"><img src="icons/whatsapp1.jpg" alt="whatsapp" title="Whatsapp"></a></td>
+		<td><a href="#"><img src="icons/facebook.jpg" alt="facebook" title="Facebook"></a></td>
+		<td><a href="https://www.instagram.com/mandipandira?utm_source=qr&r=nametag"><img src="icons/instagram1.jpg" alt="instagram" title="Instagram"></td>
+		<td><a href="https://www.youtube.com"><img src="icons/youtube2.jpg" alt="youtube" title="YouTube"></td>
+	</tr>
+</table>
+</center>
+Copyright &copy; 2023
+
+
+
+
+
+	</div>
+
+</body>
+</html>

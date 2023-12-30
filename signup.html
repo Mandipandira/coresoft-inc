@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login to your personal shapestone account.</title>
+	<style>
+
+		@media (min-width: 600px) {
+			body {
+				background-color: pink;
+				font-size: 24px;
+			}
+		}
+
+		.form-container {
+			max-width: 400px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+		}
+
+		.form-container label,
+		.form-container input[type="text"],
+		.form-container input[type="email"],
+		.form-container input[type="password"],
+		.form-container select {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.form-container input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 10px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+
+	</style>
+
+<body>
+
+	<!-- Login Form -->
+	<div class="form-container">
+		<h1>Login</h1>
+		<form action="https://formspree.io/adriantinotendamandipandira@gmail.com" method="POST" enctype="multipart/form-data">
+			<label for="username">Username:</lable>
+			<input type="text" id="username" name="username" placeholder="johanne" required>
+
+			<lable for="password">Password:</lable>
+			<input type="password" required>
+
+			<input type="submit" value="Login">
+		</form>
+
+</body>
+</html>
